@@ -6,6 +6,10 @@ print (myString)
 
 # find types of variables
 # several different types are tried out
+# Note use of cat to print
+# Note cat results in different way of output than print
+# with cat, there is no [1] on the line which I like
+# cat REQUIRES \n at the end of line for newline print, print does not
 v <- TRUE
 cat ("value of v is", v, " and has a class of ", class(v), "\n")
 
@@ -31,8 +35,10 @@ cat ("value of v is", v, " and has a class of ", class(v), "\n")
 #Create a vector
 apple <- c("cake", "Butter", "cheeese")
 print(apple)
-#vector enumerate from 1
+
+#Cectors enumerate from 1
 print(apple[1])
+
 # the following is the class of vector
 print(class(apple))
 
@@ -44,3 +50,27 @@ list1 <- list(c(2,3,5),21,sin)
 #print list
 print(list1)
 print(list1[1])
+
+#find active variables in memory
+print("Memory variables are")
+print(ls())
+
+# List the variables starting with the pattern "var".
+cat("Pattern match variables starting with patter var \n")
+print(ls(pattern = "var"))
+
+# By definition variables starting with dot '.' are not listes
+# do this to list them
+cat("List all variables \n")
+cat(ls(all.name = TRUE))
+
+#Delete single variable
+rm(list1)
+# this accesses non-existing variable, will lead to error
+# uncomment to test that the variable is removed
+#print(list1)
+
+# remove all variables
+rm(list = ls())
+# The following command should lead to output 'character(0)'
+print(ls())
