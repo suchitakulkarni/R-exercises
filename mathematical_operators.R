@@ -38,3 +38,23 @@ print(v^t) # NOTE: new function
 # ---------------------------
 # RELATIONAL OPERATORS
 # ---------------------------
+v <- c(2,5.5,6,9)
+t <- c(8,2.5,14,9)
+
+# checks if each element of first vector is greater than the corresponding element of second
+print(v>t)
+
+# checks if each element of first vector is less than the corresponding element of second
+print(v<t)
+
+# checks if each element of first vector is equal to than the corresponding element of second
+print(v==t)
+
+# checks if each element of first vector is less than or equal to corresponding element of second
+print(v<=t)
+
+# checks if each element of first vector is greater than or equal to corresponding element of second
+print(v>=t)
+
+# checks if each element of first vector is not equal to the corresponding element of second
+print(v!=t)
