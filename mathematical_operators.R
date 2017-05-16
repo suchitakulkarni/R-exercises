@@ -58,3 +58,8 @@ print(v>=t)
 
 # checks if each element of first vector is not equal to the corresponding element of second
 print(v!=t)
+
+
+# ---------------------------
+# LOGICAL OPERATORS
+# ---------------------------
