@@ -18,10 +18,12 @@ new.function <- function(a) {
         v[[index]]<-(i^2)
         index<-index+1
     }
-    print(v)
+    return(v)
 }
 
 # Call the function without supplying an argument.
-new.function(4.4)
+k<-c()
+k<-new.function(4.4)
+print(k)
 
 if (new.function("hello")=="False"){print("evaluation successful")}
